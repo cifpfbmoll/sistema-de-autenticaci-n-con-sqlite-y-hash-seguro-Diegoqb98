@@ -538,6 +538,65 @@ Este proyecto ha sido probado exitosamente con **PHP 7.4.33** en WSL2:
 
 ---
 
+## 📸 Capturas de Pantalla del Sistema en Funcionamiento
+
+### Captura 1: Inicialización de Base de Datos
+
+![Base de datos y tabla creadas correctamente](Capturas/Correcto.png)
+
+Esta captura demuestra:
+- **Ejecución exitosa de `crear_tabla.php`**
+- Mensaje de confirmación: **"Base de datos y tabla creadas correctamente"**
+- Creación automática de la base de datos SQLite en `database/usuarios.db`
+- Tabla `usuarios` inicializada con campos: `id`, `usuario`, `password`
+- Sistema listo para registrar y autenticar usuarios
+
+### Captura 2: Página Principal del Sistema
+
+![Sistema de Autenticación - Página Principal](Capturas/{12A8C043-16B4-4C1A-9D61-DD7D0C719E2E}.png)
+
+Esta captura muestra:
+- **Interfaz principal (`index.php`)** con diseño moderno y responsive
+- Gradiente visual atractivo (púrpura-azul)
+- Botones de navegación: **"📝 Registrarse"** y **"🔑 Iniciar Sesión"**
+- Información sobre características de seguridad:
+  - Hash seguro con `password_hash()`
+  - Verificación con `password_verify()`
+  - Base de datos SQLite sin necesidad de MySQL
+  - Protección contra inyección SQL con PDO
+  - Salt aleatorio automático
+- Instrucciones de configuración inicial
+- Documentación técnica embebida
+
+### Captura 3: Servidor y Funcionalidad
+
+![Sistema de Autenticación - Servidor Activo](Capturas/{77DAF3BA-329E-4939-B16B-79ED5F74C25F}.png)
+
+Esta captura demuestra:
+- **Servidor PHP funcionando** en `localhost:8000`
+- Terminal mostrando el servidor de desarrollo activo
+- Sistema completamente operativo en entorno local
+- Integración exitosa de todos los componentes
+- Aplicación web accesible y respondiendo correctamente
+
+### ✅ Verificación Completa del Sistema
+
+Las tres capturas confirman que el sistema está:
+- ✅ **Base de datos SQLite creada** correctamente en `database/usuarios.db`
+- ✅ **Tabla `usuarios` inicializada** con estructura correcta
+- ✅ **Servidor web activo** en http://localhost:8000
+- ✅ **Interfaz responsive** funcionando sin errores
+- ✅ **Todos los componentes integrados** y operativos
+- ✅ **Sistema listo** para registro y autenticación de usuarios
+
+### 🎯 Próximos Pasos para Probar el Sistema
+
+1. **Registrar un usuario**: Accede a `http://localhost:8000/registro.php`
+2. **Iniciar sesión**: Accede a `http://localhost:8000/login.php`
+3. **Verificar seguridad**: Los passwords se almacenan con hash bcrypt
+
+---
+
 ## 🎯 Casos de Uso
 
 ### Desarrollo de Aplicaciones Web
